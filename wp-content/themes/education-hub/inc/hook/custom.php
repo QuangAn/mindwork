@@ -214,11 +214,6 @@ if ( ! function_exists( 'education_hub_footer_copyright' ) ) :
 	        <?php echo $copyright_text; ?>
 	      </div><!-- .copyright -->
 	    <?php endif; ?>
-	    <div class="site-info">
-	      <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'education-hub' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'education-hub' ), 'WordPress' ); ?></a>
-	      <span class="sep"> | </span>
-			<?php printf( esc_html__( '%1$s by %2$s', 'education-hub' ), 'Education Hub', '<a href="' . esc_url( 'https://wenthemes.com/' ) . '" rel="designer" target="_blank">WEN Themes</a>' ); ?>
-	    </div><!-- .site-info -->
 	    <?php
 
 	}
