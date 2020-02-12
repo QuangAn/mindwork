@@ -46,18 +46,18 @@ function education_hub_customize_register( $wp_customize ) {
 	$wp_customize->register_section_type( 'Education_Hub_Customize_Section_Upsell' );
 
 	// Register sections.
-	$wp_customize->add_section(
-		new Education_Hub_Customize_Section_Upsell(
-			$wp_customize,
-			'theme_upsell',
-			array(
-				'title'    => esc_html__( 'Education Hub Pro', 'education-hub' ),
-				'pro_text' => esc_html__( 'Buy Pro', 'education-hub' ),
-				'pro_url'  => 'https://themepalace.com/downloads/education-hub-pro/',
-				'priority' => 1,
-			)
-		)
-	);
+	// $wp_customize->add_section(
+	// 	new Education_Hub_Customize_Section_Upsell(
+	// 		$wp_customize,
+	// 		'theme_upsell',
+	// 		array(
+	// 			'title'    => esc_html__( 'Education Hub Pro', 'education-hub' ),
+	// 			'pro_text' => esc_html__( 'Buy Pro', 'education-hub' ),
+	// 			'pro_url'  => 'https://themepalace.com/downloads/education-hub-pro/',
+	// 			'priority' => 1,
+	// 		)
+	// 	)
+	// );
 
 }
 add_action( 'customize_register', 'education_hub_customize_register' );
